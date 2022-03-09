@@ -236,9 +236,14 @@ const output = JSON.parse(localStorage.getItem('numberData'))
 localStorage.removeItem('numberData')
 
 
-
 // Tomorrow we discsus localstorage vs cookies vs sessionstorage
 
-
-
 // REST API
+ // Basics
+ // Get
+ // Post
+ // Put
+ // Delete
+
+ // TOMORROW ******* 
+ // HTML Canvas, SVG, Animations
