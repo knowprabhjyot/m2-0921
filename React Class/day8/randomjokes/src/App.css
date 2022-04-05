@@ -1,0 +1,37 @@
+.joke-item {
+   background: antiquewhite;
+    padding: 20px;
+    width: 600px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.joke-container {
+   display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.random-joke-button {
+  background: black;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.random-joke-button button {
+  background: brown;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+}
+
+.random-joke-container {
+  margin-bottom: 20px;
+}
