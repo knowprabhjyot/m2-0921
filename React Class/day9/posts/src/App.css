@@ -1,0 +1,65 @@
+body {
+  background-color: rgb(220 235 235);
+  font-family: Nunito;
+}
+
+p {
+  border-top: 5px solid #cecece;
+  padding: 20px;
+  margin: 0;
+}
+
+h1 {
+  background: #da6161;
+  color: white;
+  padding: 20px;
+  margin: 0;
+}
+
+.section-title {
+  background: #ca2020;
+  color: white;
+  padding: 20px;
+  margin: 0;
+  font-size: 36px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.select-random-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.select-random-button {
+  padding: 10px 30px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.post-item {
+  background-color: white;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+
+
+.post-item p {
+  color: black;
+} 
+
+.post-item:hover {
+  background-color: rgb(243, 112, 112);
+  color: white;
+  cursor: pointer;
+}
+
+.post-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
+  margin: 20px;
+}

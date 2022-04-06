@@ -1,0 +1,8 @@
+Components 
+1. App Components 
+   // We will call the main API inside the app component (DONE)
+   1.1 Posts List Component // Shows the list of posts
+        1.1.1 PostItem Component 
+   1.2 Random Post Component // Shows a random post when a button is selected from app components
+        1.2.1 PostItem Component
+   1.3 SelectedPost Component // This shows when a person clicks on a post
