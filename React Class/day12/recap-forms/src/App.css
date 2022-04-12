@@ -1,0 +1,21 @@
+.grid-container {
+  height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item {
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
