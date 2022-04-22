@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
-import { decrementNumber, incrementNumber } from "./actions/action";
+// import { decrementNumber, incrementNumber } from "./actions/action";
 import "./App.css";
+import { decrement, increment } from "./reducer/counterSlice";
 
 function App() {
 
@@ -9,15 +10,16 @@ function App() {
 
   // Use Dispatch is a hook used to transmit what kind of action is fired
   const dispatch = useDispatch();
-  const state = useSelector((value) => value.changeTheNumber);
+  const count = useSelector((state) => state.counter.value);
 
   return (
     <div className="App">
-      <button onClick={() => dispatch(incrementNumber())}>+</button>
-      <span>{state}</span>
-      <button onClick={() => dispatch(decrementNumber())}>-</button>
+      <button onClick={() => dispatch(increment())}>+</button>
+      <span>{count}</span>
+      <button onClick={() => dispatch(decrement())}>-</button>
     </div>
   );
 }
 
 export default App;
+

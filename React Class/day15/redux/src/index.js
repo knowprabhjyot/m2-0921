@@ -22,3 +22,10 @@ reportWebVitals();
 
 // Cart 
 // Products
+
+
+
+// Redux
+// Actions (What to do)
+// Reducer (How to do)
+// store (Global state where we store data)
