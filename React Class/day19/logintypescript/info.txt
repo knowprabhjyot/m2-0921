@@ -1,0 +1,97 @@
+// Typescript => Javascript + types
+
+// Type assertion
+
+let id: any = 123;
+
+let numberID = <number>id;
+
+let numID = id as number;
+
+// console.log(numID);
+
+// Enums
+// Enums are again a data structure where you can save constant data
+
+enum College {
+    name = "Cornerstone",
+    address = "Granville Street"
+}
+
+// console.log(College);
+
+// // interface
+
+interface Student {
+    name: string,
+    rollNumber: number
+}
+
+let st : Student =  {
+    name: "Daniel",
+    rollNumber: 100
+}
+
+console.log(st);
+
+// Functions
+function sum(num1 : number, num2 : number): number {
+    return num1 + num2;
+}
+
+sum(2, 3 ) // 5
+sum (2, '4') // compilation error
+
+// Generic Types
+
+
+// Old school way of writing
+// function printArray(array: any) {
+//     return array;
+// }
+
+function printArray<T>(array: T): T {
+    return array;
+}
+
+// number array
+let numberArray = <number[]>printArray([1,2,3]);
+
+let stringArray = <string[]>printArray(["1", "2", "3"]);
+
+console.log(numberArray, "number");
+
+console.log(stringArray, "string");
+
+
+// MVC pattern
+// Model(base types)  View(UI) Controller(business logic)
+
+// type College {
+//     name: string,
+//     a
+// }
+
+// type Building{ 
+    
+// }
+
+// type generic
+
+
+
+// Typescript.         Javascript
+Browser X                Browser (it works)
+
+// React has a transpiler(compiler) converts the Typescript code --> Javascript
+
+
+// React application with Typescript
+
+// Command to create boiler plate in react and typescript
+// npx create-react-app logintypescript --template typescript
+
+
+
+
+
