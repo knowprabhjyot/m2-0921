@@ -1,0 +1,143 @@
+/* // Javascript Single Threaded / Syncrhonous
+
+let name = "Prabh";
+let age = 27;
+console.log(name + age);
+
+
+// Asynchronous Behaviour in Javascript
+
+let name = "Prabh";
+let age = 27;
+
+// Asynchronous behavoiour + Event Loop
+setTimeout(() => {
+  console.log(name);
+}, 0);
+
+console.log(age);
+
+
+// NPM (Node package manager)
+// It helps us to download dependencies and libraries inside of our node project
+
+
+
+// YARN
+
+// Before Npm Version 5
+// npm install --save react
+
+// New Version
+// npm install react
+
+
+// npm install --save-dev nodemon
+
+
+// React, react-router
+// React router helps you handle routes at the front end 
+
+// Backend also have their own routes from where you can get the backend data
+
+
+// npm -- node package manager
+// url - uniform resource locator
+
+// www.google.com --> DNS (IP Address) 
+
+www.google.com (BROWSER) --> ISP (Internet Service Provider) (TELUS, FIDO)
+
+// ISP maintains a list of IP addresses relevant to the url that we asked for
+
+www.google.com.    192.100.0.10 ---> Google Server  --> sends a response to the DNS --> Browser 
+
+// Browser is also smart
+// Browser also maintains  a table and it caches it.
+
+// Operating system is very smart
+
+// Cache the IP ADdress at operating system level
+
+
+www.facebook.com.  299.100.9.100
+
+
+// PARAMS
+
+// PATH PARAM
+www.google.com/search/cornerstone/10
+
+// QUERY PARAM
+www.google.com?search=cornerstone&limit=10
+
+// React router
+home/:id
+
+// Modules are similar to components in frontend
+
+
+// Import and Export
+
+
+// ES6
+// IMPORT - Get a file or module from the given path
+import react from "react";
+
+
+// EXPORT - Export this current file so that others can use it
+export default react;
+
+
+// ES5 or Node.js
+// IMPORt
+const react = require('react');
+
+// EXPORT
+module.exports = react;
+
+ */
+ 
+ // A callback is a function which passed as a parameter to another function
+ 
+ 
+/*  function greeting() {
+   console.log('Hello world!')
+ }
+ 
+ 
+ function xyz(fn) {
+   fn();
+ }
+ 
+ 
+ xyz(greeting) */
+ 
+ /* let arrray = [1,2,3,4]; */
+ 
+/* arrray.map(function(item) {
+     console.log(item);
+ })
+ 
+ arrray.map((item) => {
+   console.log(item);
+ })
+  */
+/*  function exc(item) {
+ console.log(item);
+ }
+ 
+ arrray.map(exc);
+  */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
