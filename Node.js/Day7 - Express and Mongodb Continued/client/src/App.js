@@ -56,7 +56,10 @@ export default App;
 // So it believes that it can be a threat/vulnerability
 
 
-// npm install cors
+// cors
 
 
 
+
+
+// Tomorrow we will learn how we can link documents

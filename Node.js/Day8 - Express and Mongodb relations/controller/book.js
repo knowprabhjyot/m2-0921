@@ -69,3 +69,5 @@ module.exports = {
 // userID
 
 
+// When the user loggs in
+// Save the user object inside the localstorage
