@@ -3,15 +3,42 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 
+// Add a layer of authentication
 const getUsers = async (req, res) => {
     try {
-        const data = await User.find();
 
-        return res.status(200).json({
-            message: "Succesfully fetched list of User",
-            data
-        })
+        const token = req.headers?.authorization?.split(" ")[1];
+
+        if (token) {
+            
+            const decodedObject = jwt.decode(token, { complete : true });
+            const userEmail = decodedObject?.payload?.email;
+
+
+            const findUser = await User.findOne({ email: userEmail});
+
+            if (findUser) {
+                const data = await User.find();
+
+                return res.status(200).json({
+                    message: "Succesfully fetched list of User",
+                    data
+                })
+            } else {
+                return res.status(404).json({
+                    message: "This user does'nt exist",
+                })
+            }
+
+            
+        } else {
+            return res.status(401).json({
+                message: "Not Authorized or no token provided",
+            })
+        }
+        
     } catch(error) {
+        console.log(error);
         return res.status(500).json({
             message: "There was an error!",
             error
