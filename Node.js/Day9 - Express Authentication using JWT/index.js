@@ -4,6 +4,7 @@ const PORT = 5000;
 const mongoose = require('mongoose');
 const cors = require('cors');
 const UserRoutes = require('./routes/user');
+const morgan = require('morgan');
 
 require('dotenv').config();
 
@@ -15,6 +16,10 @@ app.use(express.json())
 
 // Cors middleware asks the browser to allow resource sharing from different PORT Numbers
 app.use(cors());
+
+
+// Morgan as a logger to see incoming requests
+app.use(morgan('dev'));
 
 mongoose.connect(mongoURL, (error) => {
     if (error) {
