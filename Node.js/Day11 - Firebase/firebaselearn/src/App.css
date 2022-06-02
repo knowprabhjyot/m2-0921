@@ -1,0 +1,29 @@
+input {
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid rgb(220, 220, 220);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  gap: 20px;
+  background-color: antiquewhite;
+  padding: 20px;
+}
+
+section {
+  max-width: 800px;
+  margin: auto;
+}
+
+button {
+  max-width: 300px;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: auto;
+}

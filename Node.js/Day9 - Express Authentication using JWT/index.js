@@ -1,6 +1,6 @@
 const express = require('express');
-const app = express();
-const PORT = 5000;
+// const app = express();
+const PORT = 1000;
 const mongoose = require('mongoose');
 const cors = require('cors');
 const UserRoutes = require('./routes/user');
@@ -20,6 +20,9 @@ app.use(cors());
 
 // Morgan as a logger to see incoming requests
 app.use(morgan('dev'));
+
+
+
 
 mongoose.connect(mongoURL, (error) => {
     if (error) {
@@ -44,3 +47,20 @@ app.listen(PORT, (req, res) => {
 
 
 
+
+
+
+
+
+
+
+                const express = require('express');
+                const app = express();
+
+
+                app.use(express.static('public'));
+
+
+
+
+                
